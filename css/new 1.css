@@ -1,0 +1,73 @@
+body
+{
+width: 100%;
+max-width: 1000px;
+margin-left: auto;
+margin-right: auto;	
+}
+#document{
+	font-family: arial;
+	/*image used*/
+	background-image: url('../images/max.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    /* Full height */
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+}
+
+.nav
+{
+margin-left: 0;
+margin-right: 0;
+width: 133%;
+float: center;
+padding-left: -50%;
+}
+
+/*creates the Tab properties*/
+.tablink
+{
+	background-color: #555;
+	color: white;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	font-size: 14px;
+	width: 25%;
+}
+
+.tablink:hover
+{
+background-color: teal;	
+}
+
+.tabcontent
+{	
+color: white;
+padding: 20px 30px;
+height: 100%;
+float: left;	
+}
+
+.gif
+{
+float: right;
+margin-top: -280px;
+margin-right: 60px;
+}
+
+.tabcontent h1
+{
+font-size: 80px;	
+}
+
+#p1{
+	text-align: center; 
+	color: teal;
+	font-size: 30;
+}
+
