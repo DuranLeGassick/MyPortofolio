@@ -1,38 +1,128 @@
 <!DOCTYPE HTML>
-<html id="document">
-
-<head>
-<title>Ultimate Slav Profile</title> <!----Tab heading---->
-<!----Calls style sheet---->
-<link href="css/new 1.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript">
-function openPage(openPage)
-{
-location.href=openPage + ".html";
-}
-</script>
-</head>
-
-<body id="Body">
-<div class="nav">
-<button class="tablink" onclick="openPage('index')">Home</button>
-<button class="tablink" onclick="openPage('about')" id="defaultOpen">About</button>
-<button class="tablink" onclick="openPage('contact')">Contact</button>
-</div>
-<!-- Home Page -->
-<div class="tabcontent">
-
-<!-- Title -->
-	<h1>Welcome</h1>
-	
-	<h2>My Ultimate Slav Profile, Kalashnikov Dragunov.</h2>
-	
-	<p>Please, before you continue be a true slav and enjoy some hardbass</p>
-	
-	<a> ----> Click Here To Play</a>
+<html>
+	<head>
+	<!--- Tab description--->
+		<title>Home - Ultimate Slav Profile</title>
+		<link href="css/Style.css" rel="stylesheet" type="text/css"/>
+	<style>
+		div.relative 
+		{
+			position: relative;
+			top: -80px;
+		}
+	</style>
+		<script rel="JavaScript" src="JS/JavaScript.js"></script>
+	</head>
+	<div id="Content">
+		<body>
+		<!--- Top navigation bar --->
+		<header id="Header">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<div class="topnav" id="myTopnav">
+			<a href="index.html" class="active">Home</a>
+			<a href="about.html">About</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="contact.html">Contact</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+			</a>
+		</div>
+			<div id="Welcome">
+				<h1>Welcome</h1>
+				<p>My Ultimate Slav Profile, Kalashnikov Dragunov.</p>
+		</div>
+		</header>
+	<div id="Vid">	
+		<p><u>Please enjoy some hardbass while on the Homepage like a true slav.</u></p>
+	</div>		
+			
+	<div class="relative">		
+		<div class="youtube">
+			<video
+				controls
+				width="280" 
+				height="215" 
+				src="videos/cheekibreeki.mp4" 
+				frameborder="0" 
+				allow="encrypted-media" allowfullscreen>
+			</video>
+				
+			<video
+				controls
+				width="280" 
+				height="215" 
+				src="videos/potatojuice.mp4" 
+				frameborder="0" 
+				allow="encrypted-media" allowfullscreen>
+			</video>
+		
+			<video
+				controls
+				width="280" 
+				height="215" 
+				src="videos/narkotikkal.mp4" 
+				frameborder="0" 
+				allow="encrypted-media" allowfullscreen>
+			</video>
+		</div>
 	</div>
-	<div class="gif"><img src="https://imgur.com/a/zMqDiw6" height="300px" width="500px"></img></div>
-	
-</body>
+		<div id="not">
+			<p>Not sure what a Slav is?
+			   Here are some urban dictionaries explaining the meaning of slav:
+			</p>   
+		</div>	
+			   <br>
+		<div id="slav">
+			<h2>Slav</h2>
+			<p>	"A person ethnically belonging to 1 of the following countries: Russia, Ukraine, Belarus, Bulgaria, Slovakia, Slovenia, Macedonia, Czech Republic, Poland, Bosnia, Serbia, Kosovo etc. No one knows much about their origins but they spread in 4 directions. Although they differ they do share attributes such as similar languages, looks and personalities. Many Slavs are good-looking, some especially in Russia and former Yugoslavia have mixed Asian/Turkic/Nordic blood.
+				<br>
+					Journalist: Roman Abramovich shows the will of a Slavic man 
+				<br>
+					Russian: Abramovich is a Jew 
+				<br>
+					Journalist: No, he's Russian 
+				<br>
+					Russian: Ok, whatever..."
+				<p>by Kralya October 14, 2006</p>
+			</p>
+			
+			<h2>Slav</h2>
+			<p>
+				"Slavs are a race that existed since the ancient times. The name "slav" came from the word "slava", which means glory.
+				<br>
+				Slavs rule a big part of the world."
+				<br>
+				<p>by Za dom spremni August 24, 2005</p>
+			</p>
+			
+			<h2>Slav</h2>
+			<p>"1. Rulers of the world, smartest people in the world and probably the most ancient people to ever exist.
+				<br>
+					2. Polish, Russian, Croatian, Bosnian, Serbian and more.
+				<br>				
+					3. The ones who f*** your girlfriend and/or mother while you sleep.
+				<br>
+					4. Wow those slavs really are something. 
+				<br>
+					5. They are slavs 
+				<br>
+					6. Ya, my girlfriend got f*** by a slav, couldn't help but being stimulated by his gargantuan p***."
+				<p>by HRVATISLAV April 26, 2006</p>
+				
+			<h2>Slav</h2>
+				<p>"Anitoli, ima bust a vodka blyat”</p>
 
+				<p>“rush b”</p>
+				   
+				<p>by Gay bois go away June 04, 2018</p>
+		</div>			
+		<div id="gopnik">	
+			<img src="images/gopnik.jpg" alt="Slav guy with no teath" style="width:1000px; height:500px;">
+		</div>
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		</body>
+	</div>	
+<footer id="Footer">
+Copyright © All rights reserved. Official Slav Profile.
+</footer>		
 </html>

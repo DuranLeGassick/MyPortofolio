@@ -1,32 +1,92 @@
 <!DOCTYPE HTML>
-<html id="document">
+<html>
+	<head>
+		<title>Contact - Ultimate Slav Profile</title>
+			<link href="css/Style.css" rel="stylesheet" type="text/css"/>
+				<style>
+				  /* Set the size of the div element that contains the map */
+				  #map 
+					{
+					height: 400px;  /* The height is 400 pixels */
+					width: 100%;  /* The width is the width of the web page */
+					}
+				</style>
+		<script rel="JavaScript" src="JS/JavaScript.js"></script>
+	</head>
+	<div id="Content">
+<body>
+	<header id="Header">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<div class="topnav" id="myTopnav">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="gallery.html">Gallery</a>
+				<a href="contact.html" class="active">Contact</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+				</a>
+			</div>
+			
+		<div id="Welcome">
+			<h1>Contact Page</h1>
+			<p>My Ultimate Slav Profile, Kalashnikov Dragunov.</p>
+		</div>
+	</header>
+			
+			<div class="container">
+				<form action="mailto:legassickduran@gmail.com" method="post" enctype="text/plain">
 
-<head>
-<title>Ultimate Slav Profile</title> <!----Tab heading---->
-<!----Calls style sheet---->
-<link href="css/new 1.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript">
-function openPage(openPage)
-{
-location.href=openPage + ".html";
-}
-</script>
-</head>
+					<label for="fname">First Name</label>
+						<input type="text" id="fname" name="firstname" placeholder="Your name..">
+					
+					<label for="lname">Last Name</label>
+						<input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-<body id="Body">
-<div class="nav">
-<button class="tablink" onclick="openPage('index')">Home</button>
-<button class="tablink" onclick="openPage('about')" id="defaultOpen">About</button>
-<button class="tablink" onclick="openPage('contact')">Contact</button>
-</div>
+						<!--Drop down menu for chosen locations--->
+					<label for="country">Country</label>
+						<select id="country" name="country">
+							<option value="Russia">Russia</option>
+							<option value="Australia">Australia</option>
+							<option value="Canada">Canada</option>
+							<option value="USA">USA</option>
+							<option value="South Africa">South Africa</option>
+							<option value="United Kingdom">United Kingdom</option>
+							<option value="Rest Of World">Rest Of World</option>
+						</select>
 
-	<!-- Contact Page -->
-	<div class="tabcontent">
-	
-	<h2>If you've got any questions about Slavic nature or how to be a true Gopnik,
-		send me a message:</h2>
+					<label for="subject">Subject</label>
+					<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+					<input type="submit" id="submit" value="Submit">
+				</form>
+			</div>
+			    <h3>Where to find me</h3>
+						<!--The div element for Google Maps-->
+						<div id="map"></div>
+						<script>
+					// Initialize and add the map
+					function initMap() {
+					  // My location
+					  var uluru = {lat: 56.835351, lng: 35.844438};
+					  // The map, centered at my location
+					  var map = new google.maps.Map(
+						  document.getElementById('map'), {zoom: 8, center: uluru});
+					  // The marker, positioned at my location
+					  var marker = new google.maps.Marker({position: uluru, map: map});
+						}
+						</script>
+						<script async defer
+						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEf38y6p7wjzM2aR6HUdtaHQuCxioBYoM&callback=initMap">
+						</script>
+		</body>
 	</div>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 	
-</body>
+<footer id="Footer">
+Copyright © All rights reserved. Official Slav Profile.	
+</footer>
 
-</html>
+</html>			
+
+
+

@@ -1,36 +1,70 @@
 <!DOCTYPE HTML>
-<html id="document">
-
-<head>
-<title>Ultimate Slav Profile</title> <!----Tab heading---->
-<!----Calls style sheet---->
-<link href="css/new 1.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript">
-function openPage(openPage)
-{
-location.href=openPage + ".html";
-}
-</script>
-</head>
-
-<body id="Body">
-<div class="nav">
-<button class="tablink" onclick="openPage('index')">Home</button>
-<button class="tablink" onclick="openPage('about')" id="defaultOpen">About</button>
-<button class="tablink" onclick="openPage('contact')">Contact</button>
-</div>
-
-	<!-- About Page -->
-	<div class="tabcontent">
+<html>
+	<head>
+		<title>About - Ultimate Slav Profile</title>
+		<link href="css/Style.css" rel="stylesheet" type="text/css"/>
+		<script rel="JavaScript" src="JS/JavaScript.js"></script>
+	</head>
 	
-	<h1>What it means to be me, as a slav of course.</h1>
-	
-	<p id="p1">I do what all true Slavs do, listen to hardbass and drink lots of vodka.
-	I don't always drink vodka alone, most of the time it is with my Gopnik friends
-	</p>
-	
+	<div id="Content">
+		<body>
+			<header id="Header">
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<div class="topnav" id="myTopnav">
+				<a href="index.html">Home</a>
+				<a href="about.html" class="active">About</a>
+				<a href="gallery.html">Gallery</a>
+				<a href="contact.html">Contact</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+			
+			<div id="Welcome">
+				<h1>About Me</h1>
+				<p>My Ultimate Slav Profile, Kalashnikov Dragunov.</p>
+			</div>
+			</header>
+			
+	<div id="about">
+		<h2><u>Everything you need to know about me:</u></h2>
 	</div>
 	
-</body>
-
+	<div id="details">	
+		<p>FULL NAME: Kalashnikov Dragunov<p>			
+		<p>GENDER: Male</p>
+		<p>TITLE: Mr.</p>
+		<p>BIRTHDAY: 8/5/1988</p>
+		<p>ADDRESS: Street Глаголева Генерала Ул., дом 25/1, кв. 18</p>
+		<p>TRANS STREET: Glagoleva Generala Ul., bld. 25/1, appt. 18</p>
+		<p>CITY: Москва</p>
+		<p>TRANS CITY: Moskva</p>
+		<p>PHONE NUMBER: +7(499)473-63-26</p>
+	</div>	
+	
+		<h2 id="about"><u>What I do for fun</u></h2>
+			<p id="details">
+				Hang out with my fellow gopniks, drink a lot of vodka, squat and listen to hardbass.
+				<br>
+				I live a simple and easy life (hardbass makes life very easy, oh and the vodka), one must just
+				<br>
+				keep an eye on the western spies that invade our country but don't worry too much, it is easy to catch them.
+				<br>
+				When suspicious about someone just ask them to squat. If they squat like this:
+				<img src="images/western.jpg" alt="Western Spie" style="width:380px; height:380px;">
+				<p id="details">Remember, squat on toes break your bones!</p>
+				<p id="details">They are WESTERN SPIE!</p>
+				<br>
+				<p id="details">There is only one correct way to squat, our true fellow slav comrade will demonstrate below:
+				<img src="images/true.png" alt="Western Spie" style="width:380px; height:380px;">
+				<br>
+				<p id="details">Have a look at my gallery to see my own fellow comrades in action they are super gopnik and true slavs, even my grandmother!</p>
+		</body>
+	</div>
+	
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		
+<footer id="Footer">
+	Copyright © All rights reserved. Official Slav Profile.
+</footer>
 </html>
