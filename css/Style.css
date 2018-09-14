@@ -1,0 +1,365 @@
+html
+{
+	background-color: #EEE;
+	width: 100%;
+	background: url('../images/redC.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: arial, Helvetica, Verdana;
+}
+
+#Content
+{
+	width: 100%;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #222;
+	background: rgba(0,0,0,.5);
+	padding: 0px;
+	color: white;
+	font-family: Open Sans;
+}
+
+#Content p
+{
+	margin-left: 10%;
+	margin-right: 10%;
+	font-size: 12pt;
+}
+
+#Header
+{
+	width: 100%;
+	max-width: 1000px;
+	min-height: 200px;
+	height: auto;
+	background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url('../images/giphy.gif') no-repeat;
+	background-size: cover;
+	background-position: center top;
+}
+
+#not p
+{
+	color: #ffbd45;
+	text-align: center;
+	font-size: 20pt;
+	font-family: Open Sans;
+}
+
+#Welcome h1
+{
+	color: #ffbd45;
+	text-align: center;
+	font-size: 40pt;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-weight: bold;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+#Welcome p
+{
+	color: #c63f17;
+	text-align: center;
+	font-size: 18pt;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-weight: bold;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+#slav
+{
+	color: #c63f17;
+	font-size: 16pt;
+	padding: 60px;
+}
+
+#slav p
+{
+	color: #ffbd45;
+	font-family: Open Sans;
+	font-size: 14pt;
+}
+
+#gopnik
+{
+	float: top;
+	padding: center;
+	width: 100%;
+	opacity: 0.6;
+}
+
+#about 
+{
+	text-align: center;
+	font-family: Open Sans;
+	color: #c63f17;
+	font-size: 14pt;	
+}
+
+#details
+{
+	text-align: center;
+	color: #ffbd45;
+	font-family: Open Sans;
+}
+
+
+
+/* Add a black background color to the top navigation */
+.topnav 
+{
+    background: rgba(0,0,0,0.9);
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover 
+{
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+.active 
+{
+    background: linear-gradient(rgba(163,24,24,0.5), rgba(163,24,24,0.7));
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon 
+{
+    display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea 
+{
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] 
+{
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover 
+{
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container 
+{
+    border-radius: 5px;
+    background-color: #373737;
+    padding: 20px;
+	opacity: 0.8;
+}
+
+#submit
+{
+	color:#ffffff;
+	background-color:#c63f17;
+}
+
+.youtube
+{
+	padding: 73px;
+}
+
+#Vid p
+{
+	color: #ffbd45;
+	text-align: center;
+	padding: 40px;
+	font-size:17pt;
+}
+
+#myBtn 
+{
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 20px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: red; /* Set a background color */
+	color: white; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 15px; /* Some padding */
+	border-radius: 10px; /* Rounded corners */
+	font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover 
+{
+	background-color: #555; /* Add a dark-grey background on hover */
+}
+
+#Footer
+{
+	text-align: center;
+	color: #ffbd45;
+}
+
+#h5
+{
+	font-family: Open Sans;
+	font-size: 16pt;
+	color: #ffbd45;
+	text-align: center;
+}
+
+/* css3 photo gallery styles */
+.gallery {
+	width: 100%;
+    max-width: 1000px;
+}
+.gallery a {
+    display:inline-block;
+    height:240px;
+    position:relative;
+    width:240px;
+}
+.gallery a img {
+    border:5px solid #c63f17;
+    cursor:pointer;
+    display:block;
+    height:100%;
+    left:0px;
+    position:absolute;
+    top:0px;
+    width:100%;
+    z-index:1;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    -webkit-transition-property:width, height, top, bottom, left, right, z-index, border;
+    -webkit-transition-duration:0.5s;
+    -moz-transition-property:width, height, top, bottom, left, right, z-index, border;
+    -moz-transition-duration:0.5s;
+    -o-transition-property:width, height, top, bottom, left, right, z-index, border;
+    -o-transition-duration:0.5s;
+    transition-property:width, height, top, bottom, left, right, z-index, border;
+    transition-duration:0.5s;
+}
+.gallery a:focus img {
+    border:15px solid #c63f17;
+    cursor:default;
+    height:250%;
+    position:absolute;
+    width:250%;
+    z-index:25;
+    box-shadow:1px 1px 5px #888;
+    -moz-box-shadow:1px 1px 5px #888;
+    -webkit-box-shadow:1px 1px 5px #888;
+    -webkit-transition-property:width, height, top, bottom, left, right, z-index, border;
+    -webkit-transition-duration:0.5s;
+    -moz-transition-property:width, height, top, bottom, left, right, z-index, border;
+    -moz-transition-duration:0.5s;
+    -o-transition-property:width, height, top, bottom, left, right, z-index, border;
+    -o-transition-duration:0.5s;
+    transition-property:width, height, top, bottom, left, right, z-index, border;
+    transition-duration:0.5s;
+}
+
+/* custom focus rules */
+.gallery a:focus:nth-child(3n+1) img {
+left:150px;
+}
+
+.gallery a:focus:nth-child(3n+2) img {
+    left:-50px;
+}
+
+.gallery a:focus:nth-child(3n+3) img {
+    left:-250px;
+}
+
+.gallery a:focus:nth-child(-n+3) img {
+    top:140px;
+}
+
+.gallery a:focus:nth-child(n+7) img {
+    top:-150px;
+}
+
+.gallery a:focus:nth-child(n+10) img {
+    top:-295px;
+}
+
+/* extra close layer */
+.gallery .close {
+    background:transparent;
+    cursor:pointer;
+    display:none;
+    height:352px;
+    left:170px;
+    position:absolute;
+    top:160px;
+    width:500px;
+    z-index:30;
+}
+
+.gallery a:focus ~ .close {
+    display:block;
+}
